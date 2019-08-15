@@ -13,11 +13,21 @@ Create conda environment and activate it:
 ```
 ```
 
+## Running
+
 Create run folder:
 
 ```
-mkdir my_run_today
-cd my_run_today
+mkdir [run_name]
+cd [run_name]
 ```
 
+Where `[run_name]` is whatever you are calling todays run (as specified in MinKNOW).
 
+Run RAMPART:
+
+```
+rampart --protocol ../rampart-ebov --basecalledPath ~/MinKNOW/data/reads/[run_name]/pass
+```
+
+`basecalledPath` should be set to whereever MinKNOW/guppy is going to write its basecalled files.
